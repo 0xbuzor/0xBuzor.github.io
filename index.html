@@ -3,49 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>0xBuzor | Web3 Content Creator & Ambassador</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>0xBuzor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Oleo+Script&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Josefin Sans', sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+            margin: 40px;
+            transition: all 0.3s ease;
+        }
+        h1 {
+            font-family: 'Oleo Script', cursive;
+            font-size: 36px;
+        }
+        .dark-mode {
+            background-color: #121212;
+            color: #ffffff;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .toggle-btn {
+            cursor: pointer;
+            padding: 10px 15px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>0xBuzor</h1>
-        <p>Web3 Content Creator | KOL | Ambassador</p>
-    </header>
+    <button class="toggle-btn" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    
+    <h1>0xBuzor</h1>
+    <p><strong>Web3 Content Creator | KOL | Ambassador</strong></p>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Crypto content creator with experience in DeFi, DePIN, and exchanges. I create engaging content, grow Web3 communities, and connect with audiences effectively.</p>
-    </section>
+    <h2>About Me</h2>
+    <p>Crypto content creator with experience in DeFi, DePIN, and exchanges. I create engaging content, grow Web3 communities, and connect with audiences effectively.</p>
 
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <p>Web3 ambassador and content creator. Past and current roles include:</p>
-        <ul>
-            <li><strong>Ambassador & KOL:</strong> Lepasa, Zoth, ElFi</li>
-            <li><strong>Cc:</strong> Attention Layer, Kabbal</li>
-        </ul>
-        <h3>Selected Work:</h3>
-        <ul>
-            <li><a href="https://x.com/0xBuzor/status/1867943583095165055" target="_blank">Thread 1</a></li>
-            <li><a href="https://x.com/0xBuzor/status/1874778749033410727" target="_blank">Thread 2</a></li>
-            <li><a href="https://x.com/0xBuzor/status/1847680030597357758" target="_blank">Thread 3</a></li>
-            <li><a href="https://x.com/0xBuzor/status/1874461116505665727" target="_blank">Thread 4</a></li>
-        </ul>
-    </section>
+    <h2>Portfolio</h2>
+    <p>Web3 ambassador and content creator. Past and current roles include:</p>
+    <ul>
+        <li><strong>Ambassador & KOL:</strong> Lepasa, Zoth, ElFi</li>
+        <li><strong>Cc:</strong> Attention Layer, Kabbal</li>
+    </ul>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <ul>
-            <li><a href="https://x.com/0xBuzor" target="_blank">Twitter</a></li>
-            <li><a href="https://t.me/Boywthehalo" target="_blank">Telegram</a></li>
-            <li>Discord: boywthehalo</li>
-            <li>Email: <a href="mailto:boywthehalo@gmail.com">boywthehalo@gmail.com</a></li>
-        </ul>
-    </section>
+    <h3>Selected Work:</h3>
+    <ul>
+        <li><a href="https://x.com/0xBuzor/status/1867943583095165055?t=GC87fQh6tXa-TfkUa40X1A&s=19" target="_blank">Thread 1</a></li>
+        <li><a href="https://x.com/0xBuzor/status/1874778749033410727?t=GC87fQh6tXa-TfkUa40X1A&s=19" target="_blank">Thread 2</a></li>
+        <li><a href="https://x.com/0xBuzor/status/1847680030597357758?t=wp0ujeHn6dAydGSvJLo-2g&s=19" target="_blank">Thread 3</a></li>
+        <li><a href="https://x.com/0xBuzor/status/1874461116505665727?t=wp0ujeHn6dAydGSvJLo-2g&s=19" target="_blank">Thread 4</a></li>
+    </ul>
 
-    <footer>
-        <p>© 2025 0xBuzor | Web3 Content Creator</p>
-    </footer>
+    <h2>Contact</h2>
+    <ul>
+        <li><a href="https://x.com/0xBuzor" target="_blank">Twitter</a></li>
+        <li><a href="https://t.me/Boywthehalo" target="_blank">Telegram</a></li>
+        <li>Discord: boywthehalo</li>
+        <li>Email: <a href="mailto:boywthehalo@gmail.com">boywthehalo@gmail.com</a></li>
+    </ul>
+
+    <p>© 2025 0xBuzor | Web3 Content Creator</p>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
 </body>
-</html>
+        </html>
