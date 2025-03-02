@@ -4,80 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>0xBuzor</title>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Oleo+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Josefin+Sans&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Josefin Sans', sans-serif;
-            background-color: #ffffff;
-            color: #000000;
-            margin: 40px;
-            transition: all 0.3s ease;
+            background-color: #121212;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
         }
         h1 {
             font-family: 'Oleo Script', cursive;
-            font-size: 36px;
-        }
-        .dark-mode {
-            background-color: #121212;
-            color: #ffffff;
         }
         a {
-            color: #007bff;
+            color: #1e90ff;
             text-decoration: none;
         }
-        a:hover {
-            text-decoration: underline;
+        .container {
+            max-width: 600px;
+            margin: auto;
         }
         .toggle-btn {
-            cursor: pointer;
-            padding: 10px 15px;
+            background: #1e90ff;
             border: none;
-            background-color: #007bff;
-            color: #fff;
+            padding: 10px;
+            color: white;
+            cursor: pointer;
+            margin-top: 10px;
             border-radius: 5px;
-            font-size: 14px;
-            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
-    <button class="toggle-btn" onclick="toggleDarkMode()">Toggle Dark Mode</button>
-    
-    <h1>0xBuzor</h1>
-    <p><strong>Web3 Content Creator | KOL | Ambassador</strong></p>
+    <div class="container">
+        <h1>0xBuzor</h1>
+        <p><strong>Content Creator | Ambassador & KOL | Threads, Research & Community Building</strong></p>
+        
+        <h2>Find me here:</h2>
+        <p>
+            <a href="https://x.com/0xBuzor" target="_blank">Twitter</a> | 
+            <a href="https://t.me/Boywthehalo" target="_blank">Telegram</a> | 
+            <a href="mailto:boywthehalo@gmail.com">Email</a>
+        </p>
 
-    <h2>About Me</h2>
-    <p>Crypto content creator with experience in DeFi, DePIN, and exchanges. I create engaging content, grow Web3 communities, and connect with audiences effectively.</p>
+        <h2>My Work:</h2>
+        <p>
+            <a href="https://x.com/0xBuzor/status/1867943583095165055" target="_blank">Thread 1</a> |
+            <a href="https://x.com/0xBuzor/status/1874778749033410727" target="_blank">Thread 2</a> |
+            <a href="https://x.com/0xBuzor/status/1847680030597357758" target="_blank">Thread 3</a> |
+            <a href="https://x.com/0xBuzor/status/1874461116505665727" target="_blank">Thread 4</a>
+        </p>
 
-    <h2>Portfolio</h2>
-    <p>Web3 ambassador and content creator. Past and current roles include:</p>
-    <ul>
-        <li><strong>Ambassador & KOL:</strong> Lepasa, Zoth, ElFi</li>
-        <li><strong>Cc:</strong> Attention Layer, Kabbal</li>
-    </ul>
-
-    <h3>Selected Work:</h3>
-    <ul>
-        <li><a href="https://x.com/0xBuzor/status/1867943583095165055?t=GC87fQh6tXa-TfkUa40X1A&s=19" target="_blank">Thread 1</a></li>
-        <li><a href="https://x.com/0xBuzor/status/1874778749033410727?t=GC87fQh6tXa-TfkUa40X1A&s=19" target="_blank">Thread 2</a></li>
-        <li><a href="https://x.com/0xBuzor/status/1847680030597357758?t=wp0ujeHn6dAydGSvJLo-2g&s=19" target="_blank">Thread 3</a></li>
-        <li><a href="https://x.com/0xBuzor/status/1874461116505665727?t=wp0ujeHn6dAydGSvJLo-2g&s=19" target="_blank">Thread 4</a></li>
-    </ul>
-
-    <h2>Contact</h2>
-    <ul>
-        <li><a href="https://x.com/0xBuzor" target="_blank">Twitter</a></li>
-        <li><a href="https://t.me/Boywthehalo" target="_blank">Telegram</a></li>
-        <li>Discord: boywthehalo</li>
-        <li>Email: <a href="mailto:boywthehalo@gmail.com">boywthehalo@gmail.com</a></li>
-    </ul>
-
-    <p>© 2025 0xBuzor | Web3 Content Creator</p>
+        <button class="toggle-btn" onclick="toggleMode()">Toggle Dark/Light Mode</button>
+    </div>
 
     <script>
-        function toggleDarkMode() {
-            document.body.classList.toggle('dark-mode');
+        function toggleMode() {
+            let body = document.body;
+            if (body.style.backgroundColor === "white") {
+                body.style.backgroundColor = "#121212";
+                body.style.color = "#ffffff";
+            } else {
+                body.style.backgroundColor = "white";
+                body.style.color = "#000000";
+            }
         }
     </script>
 </body>
-        </html>
+</html>
