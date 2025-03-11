@@ -1,6 +1,17 @@
-const toggleBtn = document.getElementById('toggle-btn');
-const body = document.body;
+/* Light Mode Theme */
+.light-mode {
+    background: white;
+    color: black;
+}
 
-toggleBtn.addEventListener('click', () => {
-    body.classList.toggle('light-mode');
-});
+.light-mode nav a {
+    color: black;
+}
+
+.light-mode a {
+    color: #007bff;
+}
+
+.light-mode .profile-pic {
+    border: 2px solid black;
+        }
