@@ -3,96 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>0xBuzor</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #ffffff;
-            color: #000000;
-            padding: 30px 20px;
-            line-height: 1.6;
-            transition: background-color 0.3s, color 0.3s;
-        }
-        .dark-mode {
-            background-color: #121212;
-            color: #ffffff;
-        }
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 40px;
-        }
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-        }
-        nav a {
-            text-decoration: none;
-            color: inherit;
-            font-weight: 600;
-        }
-        h1 {
-            font-size: 40px;
-            margin-bottom: 10px;
-        }
-        h2 {
-            margin-top: 40px;
-            margin-bottom: 10px;
-            font-size: 28px;
-        }
-        ul {
-            margin-left: 20px;
-        }
-        a {
-            color: #007bff;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .toggle-btn {
-            padding: 8px 14px;
-            border: none;
-            background-color: #007bff;
-            color: #fff;
-            border-radius: 5px;
-            font-size: 14px;
-            cursor: pointer;
-        }
-        footer {
-            margin-top: 40px;
-            text-align: center;
-            font-size: 14px;
-        }
-        @media (min-width: 768px) {
-            body {
-                padding: 50px 120px;
-            }
-        }
-    </style>
+    <title>0xBuzor | Web3 Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav>
-        <div><strong>0xBuzor</strong></div>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <button class="toggle-btn" onclick="toggleDarkMode()">Toggle Mode</button>
-    </nav>
-
-    <h1>0xBuzor</h1>
-    <p><strong>Web3 Content Creator | KOL | Ambassador</strong></p>
+    <header>
+        <img src="pfp.jpg" alt="Profile Picture" class="profile-pic">
+        <h1>0xBuzor</h1>
+        <p>Web3 Content Creator | KOL | Ambassador</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <button id="toggle-btn">Toggle Mode</button>
+    </header>
 
     <section id="about">
         <h2>About Me</h2>
@@ -103,11 +29,10 @@
         <h2>Portfolio</h2>
         <p>Web3 ambassador and content creator. Past and current roles include:</p>
         <ul>
-            <li><strong>Content creator | Ambassador & KOL | Thre:</strong> Lepasa, Zoth, ElFi</li>
+            <li><strong>Content creator | Ambassador & KOL:</strong> Lepasa, Zoth, ElFi</li>
             <li><strong>Cc:</strong> ATTN Layer, Kabbal</li>
         </ul>
-
-        <h3>Selected Work:</h3>
+        <h3>Threads</h3>
         <ul>
             <li><a href="https://x.com/0xBuzor/status/1867943583095165055?t=GC87fQh6tXa-TfkUa40X1A&s=19" target="_blank">Thread 1</a></li>
             <li><a href="https://x.com/0xBuzor/status/1874778749033410727?t=GC87fQh6tXa-TfkUa40X1A&s=19" target="_blank">Thread 2</a></li>
@@ -130,11 +55,6 @@
         © 2025 0xBuzor | Web3 Content Creator
     </footer>
 
-    <script>
-        function toggleDarkMode() {
-            document.body.classList.toggle('dark-mode');
-        }
-    </script>
-
+    <script src="script.js"></script>
 </body>
 </html>
